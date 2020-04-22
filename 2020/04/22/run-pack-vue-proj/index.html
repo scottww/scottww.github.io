@@ -15,22 +15,22 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="背景： vue项目打包后的文件（通常为dist，文件夹名由webpack配置），在正式发布前，需要在本地测试查看，打包后的效果是否与本地node运行时一致，这里使用express服务器运行。">
 <meta property="og:locale" content="zh">
-<meta property="og:image" content="https://scottww.github.io/public/2020/04/22/run-pack-vue-proj/1.pngrun-pack-vue-proj/1.png">
-<meta property="og:image" content="https://scottww.github.io/run-pack-vue-proj/2.pngrun-pack-vue-proj/2.png">
-<meta property="og:image" content="https://scottww.github.io/run-pack-vue-proj/3.png">
-<meta property="og:image" content="https://scottww.github.io/run-pack-vue-proj/4.png">
-<meta property="og:image" content="https://scottww.github.io/run-pack-vue-proj/5.png">
-<meta property="og:image" content="https://scottww.github.io/run-pack-vue-proj/6.png">
-<meta property="og:image" content="https://scottww.github.io/run-pack-vue-proj/7.png">
-<meta property="og:image" content="https://scottww.github.io/run-pack-vue-proj/8.png">
-<meta property="og:image" content="https://scottww.github.io/run-pack-vue-proj/9.png">
+<meta property="og:image" content="https://scottww.github.io/2020/04/22/run-pack-vue-proj/run-pack-vue-proj/1.png">
+<meta property="og:image" content="https://scottww.github.io/2020/04/22/run-pack-vue-proj/run-pack-vue-proj/2.png">
+<meta property="og:image" content="https://scottww.github.io/2020/04/22/run-pack-vue-proj/run-pack-vue-proj/3.png">
+<meta property="og:image" content="https://scottww.github.io/2020/04/22/run-pack-vue-proj/run-pack-vue-proj/4.png">
+<meta property="og:image" content="https://scottww.github.io/2020/04/22/run-pack-vue-proj/run-pack-vue-proj/5.png">
+<meta property="og:image" content="https://scottww.github.io/2020/04/22/run-pack-vue-proj/run-pack-vue-proj/6.png">
+<meta property="og:image" content="https://scottww.github.io/2020/04/22/run-pack-vue-proj/run-pack-vue-proj/7.png">
+<meta property="og:image" content="https://scottww.github.io/2020/04/22/run-pack-vue-proj/run-pack-vue-proj/8.png">
+<meta property="og:image" content="https://scottww.github.io/2020/04/22/run-pack-vue-proj/run-pack-vue-proj/9.png">
 <meta property="article:published_time" content="2020-04-22T13:59:09.000Z">
-<meta property="article:modified_time" content="2020-04-22T15:59:54.125Z">
+<meta property="article:modified_time" content="2020-04-22T16:08:37.096Z">
 <meta property="article:author" content="Scottww">
 <meta property="article:tag" content="express">
 <meta property="article:tag" content="vue">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://scottww.github.io/public/2020/04/22/run-pack-vue-proj/1.pngrun-pack-vue-proj/1.png">
+<meta name="twitter:image" content="https://scottww.github.io/2020/04/22/run-pack-vue-proj/run-pack-vue-proj/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -248,23 +248,23 @@
 <a id="more"></a>
 
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>win10<br>node v10.16.1<br>npm v6.14.2  </p>
-<p><img src="/public/2020/04/22/run-pack-vue-proj/1.pngrun-pack-vue-proj/1.png" alt="图片"></p>
+<p><img src="run-pack-vue-proj/1.png" alt="图片"></p>
 <h2 id="安装express-generator"><a href="#安装express-generator" class="headerlink" title="安装express-generator"></a>安装express-generator</h2><p><code>$ npm install express-generator -g</code></p>
-<p><img src="/run-pack-vue-proj/2.pngrun-pack-vue-proj/2.png" alt="图片"></p>
+<p><img src="run-pack-vue-proj/2.png" alt="图片"></p>
 <h2 id="创建express项目"><a href="#创建express项目" class="headerlink" title="创建express项目"></a>创建express项目</h2><p>cd切换路径到桌面</p>
-<p><img src="/run-pack-vue-proj/3.png" alt="图片">  </p>
+<p><img src="run-pack-vue-proj/3.png" alt="图片">  </p>
 <p>执行命令<code>$ express VueViewer</code>  </p>
-<p><img src="/run-pack-vue-proj/4.png" alt="图片"></p>
+<p><img src="run-pack-vue-proj/4.png" alt="图片"></p>
 <p>在桌面会创建一个express项目VueViewer文件</p>
-<p><img src="/run-pack-vue-proj/5.png" alt="图片"></p>
+<p><img src="run-pack-vue-proj/5.png" alt="图片"></p>
 <h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><p>cd切换进入VueViewer目录下</p>
-<p><img src="/run-pack-vue-proj/6.png" alt="图片"></p>
+<p><img src="run-pack-vue-proj/6.png" alt="图片"></p>
 <p><code>$ npm install</code> 安装依赖</p>
-<p><img src="/run-pack-vue-proj/7.png" alt="图片"></p>
+<p><img src="run-pack-vue-proj/7.png" alt="图片"></p>
 <h2 id="拷贝文件"><a href="#拷贝文件" class="headerlink" title="拷贝文件"></a>拷贝文件</h2><p>把vue打包文件，复制到VueViewer项目的public目录下</p>
-<p><img src="/run-pack-vue-proj/8.png" alt="图片"></p>
+<p><img src="run-pack-vue-proj/8.png" alt="图片"></p>
 <h2 id="启动项目"><a href="#启动项目" class="headerlink" title="启动项目"></a>启动项目</h2><p>执行命令 <code>$ npm start</code>, 启动项目</p>
-<p><img src="/run-pack-vue-proj/9.png" alt="图片"></p>
+<p><img src="run-pack-vue-proj/9.png" alt="图片"></p>
 <p>浏览器访问<code>localhost:3000</code></p>
 
       
